@@ -1,0 +1,10 @@
+export { default as Adidas } from "./Adidas";
+export { default as Heart } from "./Heart";
+export { default as Home } from "./Home";
+export { default as Jordan } from "./Jordan";
+export { default as Nike } from "./Nike";
+export { default as Notification } from "./Notification";
+export { default as Profile } from "./Profile";
+export { default as Puma } from "./Puma";
+export { default as SearchIcon } from "./SearchIcon";
+export { default as Shop } from "./Shop";
