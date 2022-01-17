@@ -1,11 +1,15 @@
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import * as React from 'react';
+import { SafeAreaView } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import TabNavigation from './Nagivation';
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <TabNavigation />
-    </SafeAreaProvider>
+    <SafeAreaView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <TabNavigation />
+      </NavigationContainer>
+    </SafeAreaView>
   );
 }

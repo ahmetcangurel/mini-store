@@ -6,10 +6,10 @@ const HomeScreen = (props) => {
     const { navigation } = props;
 
     return (
-        <SafeAreaView>
-            <Text>Hello  Home 3</Text>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }} >
+            <Text>Hello Home 3</Text>
             <Button title='Product' onPress={() => navigation.navigate('Detail')} />
-        </SafeAreaView>
+        </View>
     )
 }
 

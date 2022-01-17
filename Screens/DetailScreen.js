@@ -3,9 +3,9 @@ import { View, Text,SafeAreaView } from 'react-native'
 
 const DetailScreen = () => {
     return (
-        <SafeAreaView>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }} >
             <Text>Hello  DetailScreen 3</Text>
-        </SafeAreaView>
+        </View>
     )
 }
 
