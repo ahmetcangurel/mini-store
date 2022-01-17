@@ -11,7 +11,7 @@ const SvgAdidas = (props) => (
     className=""
     {...props}
   >
-    <Path fill="url(#Adidas_svg__a)" fillOpacity={0.4} d="M0 0h47v29H0z" />
+    <Path fill="url(#Adidas_svg__a)" d="M0 0h47v29H0z" />
     <Defs>
       <Pattern
         id="Adidas_svg__a"
