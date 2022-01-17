@@ -38,14 +38,7 @@ function HomeStackScreen() {
                             title="Info"
                             color="#000"
                         />
-                    ),
-                    headerLeft: () => (
-                        <Button
-                            onPress={() => alert('This is a button!')}
-                            title="Info"
-                            color="#000"
-                        />
-                    ),
+                    )
                 }}
                 component={DetailScreen} />
         </HomeStack.Navigator>
