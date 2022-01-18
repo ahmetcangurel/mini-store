@@ -2,6 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Adidas, Jordan, Nike, Puma } from './icons'
 
+const brandsData = '../assets/data/brands.json'
+
 const Brands = () => {
     return (
         <View style={styles.container}>
