@@ -1,27 +1,22 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Adidas, Jordan, Nike, Puma } from './icons'
+import { SvgUri } from 'react-native-svg'
 
-const brandsData = '../assets/data/brands.json'
+import brands from '../assets/data/brands'
 
 const Brands = () => {
+
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Brands!</Text>
-            <View style={styles.brands}>
-                <TouchableOpacity style={styles.brand}>
-                    <Nike />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.brand}>
-                    <Adidas />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.brand}>
-                    <Puma />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.brand}>
-                    <Jordan />
-                </TouchableOpacity>
-            </View>
+            <Text style={styles.title} >Brands!</Text>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
+                {brands.map(brand => (
+                    <TouchableOpacity key={brand.id} style={styles.brand}>
+                        {/* Marka Logoları Gelecek! (svgUri olmadı!) */}
+                    </TouchableOpacity>
+                ))}
+            </ScrollView>
         </View>
     )
 }
