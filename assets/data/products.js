@@ -4,7 +4,7 @@ export default [
         brand: "nike",
         model: "Nike Air Max 90",
         price: '239.80',
-        image: "../img/shoe1.png",
+        image: require("../img/shoe1.png"),
         summary: "A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.",
         colors: {
             color1: "#29605D",
@@ -26,7 +26,7 @@ export default [
         brand: "adidas",
         model: "Adidas 53435",
         price: '239.80',
-        image: "../img/shoe2.png",
+        image: require("../img/shoe2.png"),
         summary: "A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.",
         colors: {
             color1: "#29605D",
@@ -48,7 +48,7 @@ export default [
         brand: "adidas",
         model: "Nike Air Max 2222",
         price: '239.80',
-        image: "../img/shoe3.png",
+        image: require("../img/shoe3.png"),
         summary: "A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.",
         colors: {
             color1: "#29605D",
@@ -70,7 +70,7 @@ export default [
         brand: "nike",
         model: "Nike Air Max 312312",
         price: '239.80',
-        image: "../img/shoe4.png",
+        image: require("../img/shoe4.png"),
         summary: "A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.",
         colors: {
             color1: "#29605D",

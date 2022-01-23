@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         marginTop: 25,
         justifyContent: 'space-between',
         width: Dimensions.get('window').width / 2 - 4520,
-        paddingRight: 15,
+        marginRight: 15,
     },
     imageContainer: {
         width: 140,

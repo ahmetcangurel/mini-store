@@ -1,26 +1,28 @@
+import { Adidas, Jordan, Nike, Puma } from '../../components/icons'
+
 export default [
     {
         id: 'nike-logo',
-        logo: require('../icons/Nike.svg')
+        logo: <Nike />,
     },
     {
         id: 'adidas-logo',
-        logo: require('../../components/icons/Adidas')
+        logo: <Adidas />,
     },
     {
         id: 'puma-logo',
-        logo: require('../../components/icons/Puma')
+        logo: <Puma />,
     },
     {
         id: 'jordan-logo',
-        logo: require('../../components/icons/Jordan')
+        logo: <Jordan />,
     },
     {
         id: '21312-logo',
-        logo: require('../../components/icons/Jordan')
+        logo: <Nike />,
     },
     {
         id: '2131213122-logo',
-        logo: require('../icons/Puma.svg')
+        logo: <Puma />,
     }
 ]

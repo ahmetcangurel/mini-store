@@ -1,8 +1,5 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { Adidas, Jordan, Nike, Puma } from './icons'
-import { SvgUri } from 'react-native-svg'
-
 import brands from '../assets/data/brands'
 
 const Brands = () => {
@@ -13,7 +10,7 @@ const Brands = () => {
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
                 {brands.map(brand => (
                     <TouchableOpacity key={brand.id} style={styles.brand}>
-                        {/* Marka Logoları Gelecek! (svgUri olmadı!) */}
+                        {brand.logo}
                     </TouchableOpacity>
                 ))}
             </ScrollView>
