@@ -10,35 +10,23 @@ import DetailScreen from './Screens/DetailScreen'
 
 import TabBar from './components/TabBar';
 import { Button } from 'react-native';
-import { Adidas } from './components/icons';
 
 const HomeStack = createNativeStackNavigator();
 
 function HomeStackScreen() {
     return (
         <HomeStack.Navigator
-            screenOptions={{ headerShown: false }}
         >
             <HomeStack.Screen
-                headerStyle={{ headerShown: false }}
+                options={{ headerShown: false }}
                 name="Home"
-                component={HomeScreen}
-                options={{
-                    headerRight: () => (
-                        <Button
-                            onPress={() => alert('This is a button!')}
-                            title="Info"
-                            color="#000"
-                        />
-                    ),
-                },
-                    { title: 'Header!' }} />
+                component={HomeScreen} />
             <HomeStack.Screen
                 name="Detail"
                 options={{
                     headerRight: () => (
                         <Button
-                            onPress={() => alert('This is a button!')}
+                            onPress={() => alert('More button!')}
                             title="Info"
                             color="#000"
                         />

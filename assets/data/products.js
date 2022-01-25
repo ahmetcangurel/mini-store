@@ -1,7 +1,9 @@
+import { Adidas, Jordan, Nike, Puma } from "../../components/icons"
+
 export default [
     {
         id: '1',
-        brand: "nike",
+        brand: <Nike />,
         model: "Nike Air Max 90",
         price: '239.80',
         image: require("../img/shoe1.png"),
@@ -23,7 +25,7 @@ export default [
     },
     {
         id: '2',
-        brand: "adidas",
+        brand: <Adidas />,
         model: "Adidas 53435",
         price: '239.80',
         image: require("../img/shoe2.png"),
@@ -45,7 +47,7 @@ export default [
     },
     {
         id: '3',
-        brand: "adidas",
+        brand: <Puma />,
         model: "Nike Air Max 2222",
         price: '239.80',
         image: require("../img/shoe3.png"),
@@ -67,7 +69,7 @@ export default [
     },
     {
         id: '4',
-        brand: "nike",
+        brand: <Jordan />,
         model: "Nike Air Max 312312",
         price: '239.80',
         image: require("../img/shoe4.png"),

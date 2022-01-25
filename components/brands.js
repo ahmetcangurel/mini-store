@@ -10,7 +10,7 @@ const Brands = () => {
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
                 {brands.map(brand => (
                     <TouchableOpacity key={brand.id} style={styles.brand}>
-                        {brand.logo}
+                        {brand.brand}
                     </TouchableOpacity>
                 ))}
             </ScrollView>

@@ -3,26 +3,26 @@ import { Adidas, Jordan, Nike, Puma } from '../../components/icons'
 export default [
     {
         id: 'nike-logo',
-        logo: <Nike />,
+        brand: <Nike />,
     },
     {
         id: 'adidas-logo',
-        logo: <Adidas />,
+        brand: <Adidas />,
     },
     {
         id: 'puma-logo',
-        logo: <Puma />,
+        brand: <Puma />,
     },
     {
         id: 'jordan-logo',
-        logo: <Jordan />,
+        brand: <Jordan />,
     },
     {
         id: '21312-logo',
-        logo: <Nike />,
+        brand: <Nike />,
     },
     {
         id: '2131213122-logo',
-        logo: <Puma />,
+        brand: <Puma />,
     }
 ]

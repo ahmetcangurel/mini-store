@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, TouchableOpacity, StyleSheet } from 'react-native'
 import { Heart, Home, Profile, Shop } from './icons'
 
 function TabBar({ state, descriptors, navigation }) {

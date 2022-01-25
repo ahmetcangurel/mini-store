@@ -1,8 +1,6 @@
 import React from 'react'
 import { Dimensions, FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-import { Nike } from '../components/icons'
-
 import products from '../assets/data/products'
 
 const PopularProducts = () => {
@@ -20,7 +18,9 @@ const PopularProducts = () => {
                     <TouchableOpacity style={styles.product}>
                         <View style={styles.imageContainer}>
                             <Image style={styles.image} source={item.image} />
-                            <Nike style={styles.svg} />
+                            <View style={styles.svg}>
+                                {item.brand}
+                            </View>
                         </View>
                         <View style={styles.textContainer}>
                             <Text style={styles.price} >{item.price}</Text>
@@ -29,34 +29,6 @@ const PopularProducts = () => {
                     </TouchableOpacity>
                 )}
             />
-
-
-
-
-            {/* {products.map(item => (
-                <TouchableOpacity style={styles.product}>
-                    <View style={styles.imageContainer}>
-                        <Image style={styles.image} source={item.image} />
-                        <Nike style={styles.svg} />
-                    </View>
-                    <View style={styles.textContainer}>
-                        <Text style={styles.price} >{item.price}</Text>
-                        <Text style={styles.model} >{item.model}</Text>
-                    </View>
-                </TouchableOpacity>
-            ))}
-
-            <TouchableOpacity style={styles.product}>
-                <View style={styles.imageContainer}>
-                    <Image style={styles.image} source={require('../assets/img/shoe1.png')} />
-                    <Nike style={styles.svg} />
-                </View>
-                <View style={styles.textContainer}>
-                    <Text style={styles.price} >$239.80</Text>
-                    <Text style={styles.model} >Nike Air Max 90</Text>
-                </View>
-            </TouchableOpacity> */}
-
         </View>
     )
 }
@@ -92,7 +64,7 @@ const styles = StyleSheet.create({
     },
     svg: {
         position: 'absolute',
-        bottom: 20,
+        bottom: 10,
         right: 13,
         opacity: 0.4,
     },

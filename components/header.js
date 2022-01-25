@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <View style={styles.header}>
             <Text style={styles.title}>Sneakrs</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => alert('Bildirimler!')} >
                 <Notification />
             </TouchableOpacity>
         </View>
