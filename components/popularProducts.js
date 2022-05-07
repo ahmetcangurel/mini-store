@@ -3,7 +3,7 @@ import { Dimensions, FlatList, Image, StyleSheet, Text, TouchableOpacity, View }
 
 import products from '../assets/data/products'
 
-const PopularProducts = () => {
+const PopularProducts = ({ navigation }) => {
 
     const DATA = products;
     return (
@@ -15,7 +15,10 @@ const PopularProducts = () => {
                 keyExtractor={(item, index) => index}
                 numColumns={2}
                 renderItem={({ item }) => (
-                    <TouchableOpacity style={styles.product}>
+                    <TouchableOpacity
+                        style={styles.product}
+                        onPress={() => navigation.navigate('Detail', { item })}
+                    >
                         <View style={styles.imageContainer}>
                             <Image style={styles.image} source={item.image} />
                             <View style={styles.svg}>
@@ -24,7 +27,7 @@ const PopularProducts = () => {
                         </View>
                         <View style={styles.textContainer}>
                             <Text style={styles.price} >{item.price}</Text>
-                            <Text style={styles.model} >{item.model}</Text>
+                            <Text style={styles.model} numberOfLines={1} >{item.model}</Text>
                         </View>
                     </TouchableOpacity>
                 )}
@@ -37,6 +40,7 @@ export default PopularProducts
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         marginTop: 39,
     },
     title: {
@@ -44,9 +48,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     product: {
+        flex: 1,
         marginTop: 25,
         justifyContent: 'space-between',
-        width: Dimensions.get('window').width / 2 - 4520,
+        //width: Dimensions.get('window').width / 2 - 4520,
         marginRight: 15,
     },
     imageContainer: {

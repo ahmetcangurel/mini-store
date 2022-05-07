@@ -14,8 +14,7 @@ const HomeScreen = (props) => {
             <Header />
             <Search />
             <Brands />
-            <Button title='Product' onPress={() => navigation.navigate('Detail')} />
-            <PopularProducts />
+            <PopularProducts navigation={navigation} />
         </ScrollView>
     )
 }

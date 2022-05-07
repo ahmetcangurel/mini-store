@@ -4,7 +4,7 @@ import DropDownPicker from 'react-native-dropdown-picker'
 
 import products from '../assets/data/products'
 
-const DetailScreen = () => {
+const DetailScreen = ({item}) => {
     const data = products[0]
 
     const [open, setOpen] = useState(false);
