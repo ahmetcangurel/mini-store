@@ -7,13 +7,13 @@ It was created using React Native technologies. You can find the screenshots bel
 
 ### Gif
 
-![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ahmetcangurel/mini-store/main/screen_pic/gif.gif) 
+![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ahmetcangurel/mini-store/master/screen_pic/gif.gif) 
 
 ### Screenshots
 
-![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ahmetcangurel/mini-store/main/screen_pic/1.png)
+![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ahmetcangurel/mini-store/master/screen_pic/1.png)
 
-![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ahmetcangurel/mini-store/main/screen_pic/2.png)
+![Uygulama Ekran Görüntüsü](https://raw.githubusercontent.com/ahmetcangurel/mini-store/master/screen_pic/2.png)
 
 ## Feedback
 
